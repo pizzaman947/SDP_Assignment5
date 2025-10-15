@@ -5,5 +5,6 @@ abstract class CoffeeDecorator implements Coffee{
     }
     @Override
     public abstract void getCoffee();
-    public abstract void getCost();
+    @Override
+    public abstract double getCost();
     }

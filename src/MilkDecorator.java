@@ -4,11 +4,13 @@ public class MilkDecorator extends CoffeeDecorator{
     }
     @Override
     public void getCoffee(){
-        System.out.println("Coffee with Milk");
+        decoratedCoffee.getCoffee();
+        System.out.print(" + Milk");
     }
 
     @Override
-    public void getCost() {
-        System.out.println("10.0 euro");
+    public double getCost() {
+       return decoratedCoffee.getCost()+1.0;
+
     }
 }

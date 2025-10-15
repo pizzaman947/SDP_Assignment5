@@ -4,10 +4,12 @@ public class SugarDecorator extends CoffeeDecorator{
     }
     @Override
     public void getCoffee(){
-        System.out.println("Coffee with sugar");
+        decoratedCoffee.getCoffee();
+        System.out.print(" + Sugar");
     }
     @Override
-    public void getCost(){
-        System.out.println("8.0 euro");
+    public double getCost(){
+        return decoratedCoffee.getCost() + 1.0;
+
     }
 }
