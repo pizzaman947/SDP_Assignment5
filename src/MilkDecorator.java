@@ -4,7 +4,6 @@ public class MilkDecorator extends CoffeeDecorator{
     }
     @Override
     public String getCoffee(){
-        decoratedCoffee.getCoffee();
         return(decoratedCoffee.getCoffee()+" + Milk");
     }
 

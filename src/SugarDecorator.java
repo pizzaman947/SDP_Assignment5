@@ -4,7 +4,6 @@ public class SugarDecorator extends CoffeeDecorator{
     }
     @Override
     public String getCoffee(){
-        decoratedCoffee.getCoffee();
         return(decoratedCoffee.getCoffee()+" + Sugar");
     }
     @Override
