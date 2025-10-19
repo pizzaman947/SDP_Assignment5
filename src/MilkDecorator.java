@@ -3,9 +3,9 @@ public class MilkDecorator extends CoffeeDecorator{
         super(coffee);
     }
     @Override
-    public void getCoffee(){
+    public String getCoffee(){
         decoratedCoffee.getCoffee();
-        System.out.print(" + Milk");
+        return(decoratedCoffee.getCoffee()+" + Milk");
     }
 
     @Override

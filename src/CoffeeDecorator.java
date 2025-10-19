@@ -4,7 +4,7 @@ abstract class CoffeeDecorator implements Coffee{
         this.decoratedCoffee = coffee;
     }
     @Override
-    public abstract void getCoffee();
+    public abstract String getCoffee();
     @Override
     public abstract double getCost();
     }

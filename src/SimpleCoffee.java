@@ -1,7 +1,7 @@
 public class SimpleCoffee implements Coffee{
     @Override
-    public void getCoffee(){
-        System.out.print("Your coffee contain: Simple Coffee");
+    public String getCoffee(){
+        return("You have a Coffee");
     }
     @Override
     public double getCost(){
